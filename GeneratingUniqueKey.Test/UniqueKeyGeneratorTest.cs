@@ -25,8 +25,8 @@ namespace GeneratingUniqueKey.Test
         [Test]
         public void Get_ShouldReturn_UniqueValues()
         {
-            //int round = 10000;
-            int round = 1000000;    // million
+            int round = 10000;
+            //int round = 1000000;    // million
             int size = 20;
             var generator = new UniqueKeyGenerator();
             var uniqueKeys = new List<string>();

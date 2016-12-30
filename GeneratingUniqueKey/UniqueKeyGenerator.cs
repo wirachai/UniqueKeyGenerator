@@ -26,7 +26,7 @@ namespace GeneratingUniqueKey
             StringBuilder result = new StringBuilder(size);
             foreach (byte b in data)
             {
-                result.Append(characters[b % (characters.Length - 1)]);
+                result.Append(characters[b % characters.Length]);
             }
             return result.ToString();
         }
